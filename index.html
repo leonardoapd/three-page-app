@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slider-style.css">
+    <link rel="stylesheet" href="css/style_template.css">
+    <title>A6 - Leonardo Perdomo</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="titles">Assignment 6 - Leonardo Perdomo</h1>
+            <p>This webapp ask the user to select a range and then ask them to guess the number that the computer choose.</p>
+        </header>
+        <section class="wrapper">
+            <form class="form-container" action="./php/guess.php" method="get">
+                <h2>Select a range:</h2>
+                <div class="range-number">
+                    <label for="min">Min:</label>
+                    <span id="selected-min"></span>
+                </div>
+                <input type="range" name="min" id="min" min="0" max="100" value="0">
+                
+                <div class="range-number">
+                    <label for="max">Max:</label>
+                    <span id="selected-max"></span>
+                </div>
+                <input type="range" name="max" id="max" min="0" max="100" value="100">
+                <input class="button-sub buttons button" type="submit" id="submit" value="Submit">
+            </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

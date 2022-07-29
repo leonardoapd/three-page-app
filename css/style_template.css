@@ -1,0 +1,156 @@
+/* A template of CSS styles is made to maintain a design flow and reuse code. */
+/* 
+    Google Fonts:
+    https://fonts.google.com/
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+ @import url("https://fonts.googleapis.com/css?family=Hind+Madurai:300,600|Poppins:300&display=swap");
+
+/* 
+    Global Styles
+ */
+* {
+    box-sizing: border-box;
+    /* The font family is set to the entire page */
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --yellow: #ffd049;
+    --light-yellow: #f8f3e49a;
+    --orange: #ffa929;
+    --light-gray: #e8e8e9a1;
+    --gray: #71738b;
+    --light-blue: #7a7c93;
+    --blue: #34385a;
+
+    --slider-handle-size: 14px;
+    --slider-handle-border-radius: 2px;
+    --slider-handle-margin-top: -4px;
+    --slider-track-height: 6px;
+    --slider-track-border-radius: 4px;
+}
+
+html {
+    background-color: var(--light-yellow);
+    /* Now 10px = 1rem! */
+    /* font-size: 62.5%; */
+    scroll-behavior: smooth;
+}
+
+/* 
+    Header
+    Styles for the titles
+ */
+.titles {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6562CF;
+    margin-bottom: 1rem;
+}
+
+/*
+    Styles for the subtitle
+ */
+.subtitles {
+    font-size: 1rem;
+    font-weight: 600;
+    color: green;
+    margin-bottom: 0.5rem;
+}
+
+/* 
+    Styles for containers
+ */
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+    Styles for the inputs, labels, and buttons
+*/
+
+.form-inputs {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #000;
+    border-radius: 0.30rem;
+    width: 100%;
+    caret-color: cornflowerblue;
+    box-shadow: 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-labels {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.30rem;
+    margin: 1rem 0;
+}
+
+/* The properties of the buttons are changed to be bigger and wide  */
+
+.button {
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.2);
+    transition: all .14s ease-out;
+    padding: 0.75rem 1rem;
+    /* width: 50%; */
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translate(.25rem, .25rem);
+}
+
+.button-sub {
+    color: #fff;
+    background-color: #6562CF;
+    border-color: #000;
+    border-width: 1px;
+    /* width: 70%; */
+}
+
+/* An animation is applied once the buttons are hover */
+
+.button-res {
+    border-color: #000;
+    border-width: 1px;
+    width: 30%;
+}
